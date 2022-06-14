@@ -21,6 +21,14 @@
 		E4838A3F2858B06D008F9535 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4838A112858B069008F9535 /* Persistence.swift */; };
 		E4838A402858B06D008F9535 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4838A122858B06D008F9535 /* Assets.xcassets */; };
 		E4838A412858B06D008F9535 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4838A122858B06D008F9535 /* Assets.xcassets */; };
+		E4838A512858B183008F9535 /* SaxjaxTunerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4838A502858B183008F9535 /* SaxjaxTunerModel.swift */; };
+		E4838A522858B183008F9535 /* SaxjaxTunerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4838A502858B183008F9535 /* SaxjaxTunerModel.swift */; };
+		E4838A532858B183008F9535 /* SaxjaxTunerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4838A502858B183008F9535 /* SaxjaxTunerModel.swift */; };
+		E4838A542858B183008F9535 /* SaxjaxTunerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4838A502858B183008F9535 /* SaxjaxTunerModel.swift */; };
+		E4838A582858B23B008F9535 /* SaxjaxTunerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4838A572858B23B008F9535 /* SaxjaxTunerViewModel.swift */; };
+		E4838A592858B23B008F9535 /* SaxjaxTunerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4838A572858B23B008F9535 /* SaxjaxTunerViewModel.swift */; };
+		E4838A5A2858B23B008F9535 /* SaxjaxTunerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4838A572858B23B008F9535 /* SaxjaxTunerViewModel.swift */; };
+		E4838A5B2858B23B008F9535 /* SaxjaxTunerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4838A572858B23B008F9535 /* SaxjaxTunerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,11 @@
 		E4838A302858B06D008F9535 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4838A342858B06D008F9535 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		E4838A362858B06D008F9535 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		E4838A502858B183008F9535 /* SaxjaxTunerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaxjaxTunerModel.swift; sourceTree = "<group>"; };
+		E4838A572858B23B008F9535 /* SaxjaxTunerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaxjaxTunerViewModel.swift; sourceTree = "<group>"; };
+		E4838A5D2858B298008F9535 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E4838A5E2858B338008F9535 /* saxjaxTuner (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "saxjaxTuner (iOS).entitlements"; sourceTree = "<group>"; };
+		E4838A5F2858B3AD008F9535 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +105,9 @@
 		E4838A072858B069008F9535 = {
 			isa = PBXGroup;
 			children = (
+				E4838A5F2858B3AD008F9535 /* README.md */,
+				E4838A5E2858B338008F9535 /* saxjaxTuner (iOS).entitlements */,
+				E4838A5D2858B298008F9535 /* MyPlayground.playground */,
 				E4838A0C2858B069008F9535 /* Shared */,
 				E4838A1E2858B06D008F9535 /* macOS */,
 				E4838A272858B06D008F9535 /* Tests iOS */,
@@ -104,10 +120,12 @@
 			isa = PBXGroup;
 			children = (
 				E4838A0F2858B069008F9535 /* saxjaxTunerApp.swift */,
-				E4838A102858B069008F9535 /* ContentView.swift */,
 				E4838A112858B069008F9535 /* Persistence.swift */,
 				E4838A122858B06D008F9535 /* Assets.xcassets */,
 				E4838A0D2858B069008F9535 /* saxjaxTuner.xcdatamodeld */,
+				E4838A562858B1BB008F9535 /* view */,
+				E4838A552858B1A5008F9535 /* model */,
+				E4838A5C2858B244008F9535 /* ViewModel */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -147,6 +165,30 @@
 				E4838A362858B06D008F9535 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		E4838A552858B1A5008F9535 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E4838A502858B183008F9535 /* SaxjaxTunerModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E4838A562858B1BB008F9535 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E4838A102858B069008F9535 /* ContentView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E4838A5C2858B244008F9535 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E4838A572858B23B008F9535 /* SaxjaxTunerViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,9 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4838A512858B183008F9535 /* SaxjaxTunerModel.swift in Sources */,
 				E4838A382858B06D008F9535 /* saxjaxTuner.xcdatamodeld in Sources */,
 				E4838A3E2858B06D008F9535 /* Persistence.swift in Sources */,
 				E4838A3A2858B06D008F9535 /* saxjaxTunerApp.swift in Sources */,
+				E4838A582858B23B008F9535 /* SaxjaxTunerViewModel.swift in Sources */,
 				E4838A3C2858B06D008F9535 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,9 +362,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4838A522858B183008F9535 /* SaxjaxTunerModel.swift in Sources */,
 				E4838A392858B06D008F9535 /* saxjaxTuner.xcdatamodeld in Sources */,
 				E4838A3F2858B06D008F9535 /* Persistence.swift in Sources */,
 				E4838A3B2858B06D008F9535 /* saxjaxTunerApp.swift in Sources */,
+				E4838A592858B23B008F9535 /* SaxjaxTunerViewModel.swift in Sources */,
 				E4838A3D2858B06D008F9535 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +377,8 @@
 			files = (
 				E4838A2B2858B06D008F9535 /* Tests_iOSLaunchTests.swift in Sources */,
 				E4838A292858B06D008F9535 /* Tests_iOS.swift in Sources */,
+				E4838A5A2858B23B008F9535 /* SaxjaxTunerViewModel.swift in Sources */,
+				E4838A532858B183008F9535 /* SaxjaxTunerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +388,8 @@
 			files = (
 				E4838A372858B06D008F9535 /* Tests_macOSLaunchTests.swift in Sources */,
 				E4838A352858B06D008F9535 /* Tests_macOS.swift in Sources */,
+				E4838A5B2858B23B008F9535 /* SaxjaxTunerViewModel.swift in Sources */,
+				E4838A542858B183008F9535 /* SaxjaxTunerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "saxjaxTuner (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LW5S74625G;
@@ -481,6 +532,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -492,6 +544,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dk.saxjax.saxjaxTuner;
 				PRODUCT_NAME = saxjaxTuner;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -503,6 +556,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "saxjaxTuner (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LW5S74625G;
@@ -511,6 +565,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -522,6 +577,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dk.saxjax.saxjaxTuner;
 				PRODUCT_NAME = saxjaxTuner;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
